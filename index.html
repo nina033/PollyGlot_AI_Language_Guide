@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PollyGlot-Perfect Translation Every Time</title>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <nav>
+            <img  src="Parrot_img.png">
+            <div id="nav-items">
+                <h1 class="nav-titles" id="hOne">PollyGlot</h1>
+                <p class="nav-titles" id="hThree">Perfect Translation Every Time</p>
+            </div>
+        </nav>
+        <main>
+            <section class="switch-panel">
+                <div id="switch-box">
+                    <button id="translate" class="active"> Translate</button>
+                    <button id="chatMode" > Chat Mode </button>
+                </div>
+            </section>
+            
+            <section class="action-panel" id="translate-section">
+                <div class="translate-box">
+                    <!-- Text to Translate -->
+                    <h3 class="translate-text">TEXT TO TRANSLATE</h3>
+                    <div id="content-window">
+                        <form id="content-form">
+                            <div>
+                                <textarea id="content-input" name="text" placeholder="Type your text here..."></textarea>
+                            </div>
+                        </form>
+                    </div>
+                            <!-- Language Selection -->
+                    <h3 id="select-lang">SELECT LANGUAGE</h3>
+                    <div class="languages-container">
+                        <label class="option-selector">
+                            <input type="radio" id="french" name="language" value="French" class="selector-btn">
+                            <span class="selector-text">French 🇫🇷</span>
+                        </label>
+                        <label class="option-selector">
+                            <input type="radio" id="spanish" name="language" value="Spanish" class="selector-btn">
+                            <span class="selector-text">Spanish 🇪🇸</span>
+                        </label>
+                        <label class="option-selector">
+                            <input type="radio" id="japanese" name="language" value="Japanese" class="selector-btn">
+                            <span class="selector-text">Japanese 🇯🇵</span>
+                        </label>
+                    </div>
+                    
+                    <button id="translate-btn"> TRANSLATE </button>   
+                </div>
+            </section>
+            
+            <section class="loading-panel" id="loading-section" style="display:none;">
+                <img id="loading" src="loader.svg" alt="loading">
+				<div id="api-message">Translating...</div>
+            </section>
+            
+            <section class="output-panel" id="output-section" style="display:none;">
+                <div class="translate-box">
+                    <h3 class="translate-text"> YOUR TEXT</h3>
+                    <div id="contentReturn-window">
+                        <div id="contentdisplay-window">
+                        
+                        </div>
+                    </div>
+                    <h3 class="translation-text"> TRANSLATION</h3>
+                    <div id="translation-window">
+                       <div id="translationdisplay-window">
+                       
+                        </div>
+                    </div>
+                    
+                
+                    <button id="startOver-btn" > START OVER </button>   
+                </div>
+            </section>
+            
+            <section class="chat-panel" id="chat-section" style="display:none;">
+                <div class="chat-box">
+                    <div> <h3 class="chat-text">CHAT WITH AI</h3></div>
+                    <div class="chatbot-conversation-container" id="chatbot-conversation-container"> </div>
+                    <form id="form" class="chatbot-input-container">
+                        <input name="user-input" type="text" id="user-input" placeholder="Type your message..." required>
+                        <button id="submit-btn" class="submit-btn">
+                            <img src="send.svg" class="send-btn-icon" alt="Send">
+                        </button>
+                    </form>
+                    
+                      <!-- <button id="chat-action-btn">START CHAT</button> -->
+                </div>
+                
+                
+            </section>
+        </main>
+       
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
