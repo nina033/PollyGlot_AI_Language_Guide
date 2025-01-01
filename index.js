@@ -1,8 +1,3 @@
-// one thing i have thought about is people being able to type any language initially 
-//I have to work on the text box type in box being good in the former formatting, i.e the startover button 
-// work on the toggle
-//for the chat mode i could make an AI agent like chatgpt that can perform complex tasks in different languages; I.e i could give it a task like write me an email in japanese with the context 
-// so it could also do things like data analysis and give the result in the propsed language as well as the language of usage for verification and simplification to avoid erros and let the user make tweaks to their input or describe what they want instead
 const generateTranslationBtn = document.querySelector('#translate-btn');
 
 generateTranslationBtn.addEventListener('click', handleTranslateClick);
